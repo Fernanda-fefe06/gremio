@@ -31,7 +31,7 @@ header img {
 }
 
 .navigation__link:hover {
-    color: var(--red) ;
+    color: var(--green); 
 }
 
 .navigation__link::after {
