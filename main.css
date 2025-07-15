@@ -1,0 +1,89 @@
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+    gap: 32px;
+}
+
+.main__info {
+    width: 100%;
+    max-width: 570px;
+    margin-top: 60px; /* Adicionado para espaçamento superior */
+}
+
+.main__info p {
+    font-size: 18px;
+    margin: 20px 0 28px;
+}
+
+.main__info div {
+    display: flex;
+    column-gap: 32px;
+}
+
+.main__info div a, .main__info div button {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    transform: skew(-10deg);
+}
+
+.main__info div a {
+    background: var(--red);
+}
+
+.main__info div button {
+    background: transparent;
+    border: 1px solid var(--green);
+}
+
+/* Centraliza as imagens que ficam acima do texto dentro de .main__info */
+.main__info img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 0 16px;
+  }
+
+  .main__info {
+    max-width: 100%;
+    margin-top: 32px;
+    text-align: center;
+  }
+
+  .main__info p {
+    font-size: 16px;
+    margin: 16px 0 24px;
+  }
+
+  .main__info div {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .main__info div a,
+  .main__info div button {
+    font-size: 14px;
+    padding: 12px 0;
+  }
+
+  main > img {
+    display: none;
+  }
+}
